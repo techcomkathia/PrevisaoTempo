@@ -61,3 +61,12 @@ function exibirNaTela(dados) {
         icone.src = "";
     }
 }
+
+function pesquisar() {
+    const inputCidade = document.querySelector("#inputCidade").value;
+    if (inputCidade) {
+        buscarCidade(inputCidade);
+    } else {
+        alert("Por favor, digite o nome de uma cidade.");
+    }
+}
